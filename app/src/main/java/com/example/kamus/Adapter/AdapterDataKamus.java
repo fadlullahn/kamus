@@ -78,7 +78,9 @@ public class AdapterDataKamus extends RecyclerView.Adapter<AdapterDataKamus.MyVi
             mTextViewName = (TextView) itemView.findViewById(R.id.tv_item_name);
             mTextViewPrice = (TextView) itemView.findViewById(R.id.tv_item_price);
             mTextViewDate = (TextView) itemView.findViewById(R.id.tv_item_date);
+            mTextViewDate.setVisibility(View.GONE);
             mImageViewFoto = itemView.findViewById(R.id.img_item_photo);
+            mImageViewFoto.setVisibility(View.GONE);
         }
     }
 }

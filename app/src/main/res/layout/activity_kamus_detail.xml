@@ -32,5 +32,13 @@
                 android:scaleType="centerInside"
                 android:id="@+id/imgHolder"/>
 
+        <TextView
+            android:id="@+id/edt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="date"
+            android:inputType="textCapSentences"
+            android:maxLines="1" />
+
     </LinearLayout>
 </ScrollView>
