@@ -7,31 +7,27 @@ import android.os.Bundle;
 import android.widget.Button;
 
 
-public class MainActivity extends AppCompatActivity {
-    Button btnDataUser, btnDataProduk, btnDataPesanan;
+public class SpesifikasiActivity extends AppCompatActivity {
+    Button btnDataUser, btnDataProduk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_spesifikasi);
 
-        btnDataPesanan = findViewById(R.id.btnDataPesanan);
         btnDataProduk = findViewById(R.id.btnDataProduk);
         btnDataUser = findViewById(R.id.btnDataUser);
 
         btnDataUser.setOnClickListener(v -> {
             Intent intent = new Intent(this, KamusDataActivity.class);
+            intent.putExtra("extraData", "darat");
             startActivity(intent);
         });
 
         btnDataProduk.setOnClickListener(v -> {
-            Intent intent = new Intent(this, SpesifikasiActivity.class);
+            Intent intent = new Intent(this, KamusDataActivity.class);
+            intent.putExtra("extraData", "laut");
             startActivity(intent);
         });
-//
-//        btnDataPesanan.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, PesananDataActivity.class);
-//            startActivity(intent);
-//        });
     }
 }

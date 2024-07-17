@@ -15,14 +15,18 @@ public class Kamus {
     @SerializedName("image")
     private String image;
 
+    @SerializedName("kategori")
+    private String kategori;
+
     public Kamus(){}
 
-    public Kamus(String id, String name, String price, String date, String image) {
+    public Kamus(String id, String name, String price, String date, String image, String kategori) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.date = date;
         this.image = image;
+        this.kategori = kategori;
     }
 
     public String getId() {
@@ -63,6 +67,14 @@ public class Kamus {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getKategori() {
+        return kategori;
+    }
+
+    public void setKategori(String kategori) {
+        this.kategori = kategori;
     }
 
 }
