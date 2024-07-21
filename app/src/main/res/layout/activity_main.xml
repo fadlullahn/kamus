@@ -14,25 +14,25 @@
         android:padding="16dp">
 
         <Button
-            android:id="@+id/btnDataUser"
+            android:id="@+id/btnKamus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Data User" />
+            android:text="Kamus" />
 
         <Button
-            android:id="@+id/btnDataProduk"
+            android:id="@+id/btnPencarian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Data Produk" />
+            android:text="Pencarian Data" />
 
         <Button
-            android:id="@+id/btnDataPesanan"
+            android:id="@+id/btnSpesifikasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Data Pesanan" />
+            android:text="Spesifikasi" />
 
     </LinearLayout>
 

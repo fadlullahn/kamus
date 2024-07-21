@@ -8,25 +8,24 @@ public class Kamus {
     private String id;
     @SerializedName("name")
     private String name;
-    @SerializedName("price")
-    private String price;
-    @SerializedName("date")
-    private String date;
-    @SerializedName("image")
-    private String image;
-
+    @SerializedName("ilmiah")
+    private String ilmiah;
     @SerializedName("kategori")
     private String kategori;
+    @SerializedName("image")
+    private String image;
+    @SerializedName("deskripsi")
+    private String deskripsi;
 
     public Kamus(){}
 
-    public Kamus(String id, String name, String price, String date, String image, String kategori) {
+    public Kamus(String id, String name, String ilmiah, String kategori, String image, String deskripsi) {
         this.id = id;
         this.name = name;
-        this.price = price;
-        this.date = date;
-        this.image = image;
+        this.ilmiah = ilmiah;
         this.kategori = kategori;
+        this.image = image;
+        this.deskripsi = deskripsi;
     }
 
     public String getId() {
@@ -45,20 +44,18 @@ public class Kamus {
         this.name = name;
     }
 
-    public String getPrice() {
-        return price;
+    public String getIlmiah() {
+        return ilmiah;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public void setIlmiah(String ilmiah) {this.ilmiah = ilmiah; }
+
+    public String getKategori() {
+        return kategori;
     }
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
+    public void setKategori(String kategori) {
+        this.kategori = kategori;
     }
 
     public String getImage() {
@@ -69,12 +66,10 @@ public class Kamus {
         this.image = image;
     }
 
-    public String getKategori() {
-        return kategori;
-    }
+    public String getDeskripsi() {return deskripsi; }
 
-    public void setKategori(String kategori) {
-        this.kategori = kategori;
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
     }
 
 }

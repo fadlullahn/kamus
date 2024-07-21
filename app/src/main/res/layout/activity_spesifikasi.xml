@@ -14,18 +14,18 @@
         android:padding="16dp">
 
         <Button
-            android:id="@+id/btnDataUser"
+            android:id="@+id/btnvertebrata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Data User" />
+            android:text="Verteberata" />
 
         <Button
-            android:id="@+id/btnDataProduk"
+            android:id="@+id/btninvertebrata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Data Produk" />
+            android:text="Invertebrata" />
 
     </LinearLayout>
 

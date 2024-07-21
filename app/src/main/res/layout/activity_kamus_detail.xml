@@ -10,33 +10,34 @@
         android:padding="16dp"
         tools:context=".KamusDetailActivity">
 
-            <TextView
-                android:id="@+id/edt_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Nama Produk"
-                android:inputType="textCapSentences"
-                android:maxLines="1" />
-
-            <TextView
-                android:id="@+id/edt_price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Harga"
-                android:inputType="textCapSentences"
-                android:maxLines="1" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="centerInside"
-                android:id="@+id/imgHolder"/>
-
-        <TextView
-            android:id="@+id/edt_date"
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="date"
+            android:scaleType="centerInside"
+            android:id="@+id/imgHolder"/>
+
+        <TextView
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Hewan"
+            android:inputType="textCapSentences"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/edt_ilmiah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Ilmiah"
+            android:inputType="textCapSentences"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/edt_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            android:autoSizeMaxTextSize="1000dp"
             android:inputType="textCapSentences"
             android:maxLines="1" />
 

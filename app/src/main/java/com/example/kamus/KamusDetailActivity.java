@@ -14,7 +14,7 @@ import com.example.kamus.Api.ApiInterface;
 
 public class KamusDetailActivity extends AppCompatActivity {
 
-    TextView edtName, edtPrice,edtDate;
+    TextView edtName, edtIlmiah,edtDeskripsi;
     ImageView imgHolder;
     String ID;
     ApiInterface mApiInterface;
@@ -27,16 +27,16 @@ public class KamusDetailActivity extends AppCompatActivity {
 
         // Identifikasi Komponen Form
         edtName = (TextView) findViewById(R.id.edt_name);
-        edtPrice = (TextView) findViewById(R.id.edt_price);
-        edtDate = (TextView) findViewById(R.id.edt_date);
+        edtIlmiah = (TextView) findViewById(R.id.edt_ilmiah);
+        edtDeskripsi = (TextView) findViewById(R.id.edt_deskripsi);
         imgHolder = (ImageView) findViewById(R.id.imgHolder);
 
         // Identifikasi intent ke Komponen Form
         Intent mIntent = getIntent();
         ID = mIntent.getStringExtra("Id");
         edtName.setText(mIntent.getStringExtra("Name"));
-        edtPrice.setText(mIntent.getStringExtra("Price"));
-        edtDate.setText(mIntent.getStringExtra("Date"));
+        edtIlmiah.setText(mIntent.getStringExtra("Ilmiah"));
+        edtDeskripsi.setText(mIntent.getStringExtra("Deskripsi"));
 
         // Masukan Gambar Ke Image View Gunakan Glide
         Glide.with(KamusDetailActivity.this)

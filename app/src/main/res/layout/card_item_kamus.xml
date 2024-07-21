@@ -44,7 +44,7 @@
                 app:layout_constraintGuide_begin="160dp" />
 
             <TextView
-                android:id="@+id/tv_item_date"
+                android:id="@+id/tv_item_deskripsi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -55,7 +55,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guideline"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="tanggal" />
+                tools:text="Deskripsi" />
 
             <TextView
                 android:id="@+id/tv_item_name"
@@ -69,11 +69,11 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guideline"
-                app:layout_constraintTop_toBottomOf="@id/tv_item_date"
+                app:layout_constraintTop_toBottomOf="@id/tv_item_deskripsi"
                 tools:text="name" />
 
             <TextView
-                android:id="@+id/tv_item_price"
+                android:id="@+id/tv_item_ilmiah"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"

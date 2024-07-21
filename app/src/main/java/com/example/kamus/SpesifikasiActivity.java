@@ -2,31 +2,33 @@ package com.example.kamus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
 
 public class SpesifikasiActivity extends AppCompatActivity {
-    Button btnDataUser, btnDataProduk;
+    Button btnVertebrata, btnInvertebrata;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spesifikasi);
 
-        btnDataProduk = findViewById(R.id.btnDataProduk);
-        btnDataUser = findViewById(R.id.btnDataUser);
+        btnVertebrata = findViewById(R.id.btnvertebrata);
+        btnInvertebrata = findViewById(R.id.btninvertebrata);
 
-        btnDataUser.setOnClickListener(v -> {
+        btnVertebrata.setOnClickListener(v -> {
             Intent intent = new Intent(this, KamusDataActivity.class);
-            intent.putExtra("extraData", "darat");
+            intent.putExtra("extraData", "vertebrata");
             startActivity(intent);
         });
 
-        btnDataProduk.setOnClickListener(v -> {
+        btnInvertebrata.setOnClickListener(v -> {
             Intent intent = new Intent(this, KamusDataActivity.class);
-            intent.putExtra("extraData", "laut");
+            intent.putExtra("extraData", "invertebrata");
             startActivity(intent);
         });
     }
